@@ -1,4 +1,3 @@
-
 ---
 
 # DAO LEX - **Stalex Governance**
@@ -19,7 +18,7 @@ Nosso objetivo é criar uma cidade mais sustentável e inclusiva, e temos vária
 - **100% Economia Circular**: Promover a reutilização e reciclagem de materiais.
 - **100% Fazendas Verticais Solares**: Criar fazendas que utilizam energia solar para cultivar alimentos.
 - **100% DAO**: Garantir que todos possam participar da governança.
-- **100% StaLEx**: Usar a criptomoeda Stalex para financiar projetos.
+- **100% StaLEx**: Usar a criptomoeda Stalex para financiar projetos, incluindo iniciativas da LEX.
 - **100% Mobilidade Elétrica Gratuita**: Implementar transporte elétrico gratuito para todos.
 - **100% Bio Bairros**: Desenvolver bairros sustentáveis e ecológicos.
 - **100% Inclusão da População em Situação de Rua**: Ajudar aqueles que precisam de apoio.
@@ -44,6 +43,7 @@ A **DAO da LEX** é uma **Organização Autônoma Descentralizada** que permite 
 2. **Plataforma de Validação**: Membros podem atuar como validadores da rede, garantindo a segurança e a descentralização.
 3. **Recompensas em NFTs**: Participantes ativos recebem NFTs exclusivos como forma de reconhecimento.
 4. **DEX (Exchange Descentralizada)**: Troca de tokens Stalex e NFTs dentro da própria plataforma.
+5. **Financiamento de Projetos**: Utilização de Stalex para financiar iniciativas propostas pela comunidade.
 
 ---
 
@@ -65,24 +65,32 @@ Abaixo está a estrutura dos arquivos do projeto, organizada em pastas para faci
 ```
 /DAO_LEX
 │
-├── /contracts
-│   ├── /governance        # Regras para tomar decisões
-│   ├── /staking           # Como guardar seus tokens
-│   ├── /dex               # Mercado para trocar tokens
-│   ├── /nft               # Criando e gerenciando NFTs
-│   └── /mining            # Como ganhar tokens ajudando
+├── /contracts                # Contratos inteligentes
+│   ├── /governance           # Regras para tomar decisões
+│   ├── /staking              # Como guardar seus tokens
+│   ├── /dex                  # Mercado para trocar tokens
+│   ├── /nft                  # Criando e gerenciando NFTs
+│   └── /mining               # Como ganhar tokens ajudando
 │
-├── /src                   # Código fonte do projeto
-│   ├── main.py            # Ponto de entrada do projeto
-│   └── utils.py           # Funções úteis
+├── /src                      # Código fonte do projeto
+│   ├── /frontend             # Código do front-end
+│   │   ├── /components       # Componentes React/Vue
+│   │   ├── /pages            # Páginas da aplicação
+│   │   └── main.js           # Ponto de entrada do front-end
+│   │
+│   ├── /backend              # Código do back-end
+│   │   ├── /api              # APIs do projeto
+│   │   ├── /models           # Modelos de dados
+│   │   ├── app.py            # Ponto de entrada do back-end
+│   │   └── utils.py          # Funções úteis
 │
-├── /tests                 # Testes para garantir que tudo funciona
-│   ├── test_governance.py # Testes para as regras de governança
-│   ├── test_staking.py    # Testes para o sistema de staking
-│   └── test_nft.py        # Testes para a criação de NFTs
+├── /tests                    # Testes para garantir que tudo funciona
+│   ├── test_governance.py    # Testes para as regras de governança
+│   ├── test_staking.py       # Testes para o sistema de staking
+│   └── test_nft.py           # Testes para a criação de NFTs
 │
-├── README.md              # Documentação do projeto
-└── requirements.txt       # Dependências do projeto
+├── README.md                 # Documentação do projeto
+└── requirements.txt          # Dependências do projeto
 ```
 
 ---
@@ -157,21 +165,25 @@ Abaixo está a estrutura dos arquivos do projeto, organizada em pastas para faci
 | NFT                |
 | Mineração          |
 +--------------------+
+        |
+        v
++--------------------+
+|      Backend       |
++--------------------+
+| API                |
+| Banco de Dados     |
+| Lógica de Negócios |
++--------------------+
 ```
-
----
 
 ## Conclusão 🌍
 
 Com a **DAO da LEX** e a ajuda do **Stalex**, estamos prontos para construir um futuro melhor para São Paulo e para o mundo. Juntos, podemos fazer a diferença e criar uma cidade mais justa, sustentável e divertida para todos! 🤖💚
 
----
+"Obrigada pelos mais de 600 apoiadores, 600 votos que validam nosso projeto ao acreditarem em nossa visão de uma São Paulo 100% inteligente, solar e sustentável!"
 
-            "Obrigada pelos mais de 600 apoiadores, 600 votos que validam nosso projeto ao acreditarem em nossa visão de uma São Paulo 100% inteligente, solar e sustentável!"
+Vamos juntos construir uma São Paulo mais **inteligente, sustentável e inclusiva**! 🚀💚
 
-
-            Vamos juntos construir uma São Paulo mais **inteligente, sustentável e inclusiva**! 🚀💚
-
-           
 👉 [Clique aqui para saber mais!](https://www.lex.tec.br/) 🌐
 
+--- 
