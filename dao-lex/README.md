@@ -43,28 +43,44 @@ A **DAO da LEX** é uma **Organização Autônoma Descentralizada** que permite 
 
 ## Estrutura de Pastas Atualizada
 
-```bash
+
+Para criar a estrutura de arquivos e diretórios solicitada para o projeto DAO da LEX - Stalex Governance, incluindo um diretório para armazenar imagens (como o logo do NFT Stalex), aqui está a versão atualizada da estrutura e um script bash que gera todos os arquivos necessários, incluindo funções, parâmetros e gerenciamento de contas e carteiras.
+
+Estrutura de Pastas e Arquivos Atualizada
+bash
+Copiar código
 dao-lex/
 │
 ├── contracts/               # Contratos Inteligentes (Solidity ou Rust)
 │   ├── governance/          # Contratos de governança (propostas e votação)
+│   │   └── Governance.sol    # Arquivo do contrato de governança
 │   ├── staking/             # Contratos de staking e recompensas
+│   │   └── Staking.sol      # Arquivo do contrato de staking
 │   └── dex/                 # Contratos da exchange descentralizada
+│       └── DEX.sol          # Arquivo do contrato DEX
 │
 ├── frontend/                # Interface de usuário
 │   ├── public/              # Arquivos públicos (HTML, imagens)
+│   │   └── images/          # Pasta para armazenar imagens
+│   │       └── logo.png     # Logo do NFT Stalex
 │   └── src/                 # Código-fonte do frontend (React ou Vue)
 │       ├── components/      # Componentes reutilizáveis
+│       │   └── Header.js    # Componente de cabeçalho
 │       ├── pages/           # Páginas principais da aplicação
+│       │   └── Home.js      # Página inicial
 │       └── utils/           # Funções auxiliares
+│           └── web3.js      # Funções para conexão Web3
 │
 ├── scripts/                 # Scripts de deploy e interação com contratos
 │   └── deploy.js            # Script de deploy dos contratos inteligentes
 │
 ├── tests/                   # Testes automatizados
 │   ├── unit/                # Testes unitários dos contratos
+│   │   └── governance.test.js # Testes unitários do contrato de governança
 │   ├── integration/         # Testes de integração
+│   │   └── staking.test.js   # Testes de integração do staking
 │   └── e2e/                 # Testes de ponta a ponta
+│       └── dex.test.js      # Testes de ponta a ponta do DEX
 │
 ├── docs/                    # Documentação do projeto
 │   └── whitepaper.md        # Whitepaper da DAO da LEX
@@ -73,24 +89,18 @@ dao-lex/
 ├── package.json             # Dependências do projeto
 ├── hardhat.config.js        # Configuração do Hardhat (ou Truffle)
 └── README.md                # Documentação principal
-```
+Script de Criação Automática Atualizado
+Use o seguinte script bash para criar automaticamente a estrutura de arquivos e pastas, incluindo o diretório para imagens e os cabeçalhos apropriados:
 
----
-
-## Automatizando a Criação de Arquivos e Pastas
-
-Para automatizar a criação da estrutura de arquivos e pastas, você pode usar o seguinte script **bash**. Ele criará todas as pastas e arquivos necessários para o projeto.
-
-### Script de Criação Automática
-
-```bash
+bash
+Copiar código
 #!/bin/bash
 
 # Criando diretórios principais
 mkdir -p dao-lex/contracts/governance
 mkdir -p dao-lex/contracts/staking
 mkdir -p dao-lex/contracts/dex
-mkdir -p dao-lex/frontend/public
+mkdir -p dao-lex/frontend/public/images
 mkdir -p dao-lex/frontend/src/components
 mkdir -p dao-lex/frontend/src/pages
 mkdir -p dao-lex/frontend/src/utils
@@ -109,26 +119,138 @@ touch dao-lex/docs/whitepaper.md
 touch dao-lex/scripts/deploy.js
 
 # Criando arquivos de exemplo para contratos
-touch dao-lex/contracts/governance/Governance.sol
-touch dao-lex/contracts/staking/Staking.sol
-touch dao-lex/contracts/dex/DEX.sol
+echo "// Nome: Governance.sol
+// Versão: 1.1
+// Data: DATA_AQUI
+// Responsabilidade: Contrato de governança para propostas e votação
+// Assinatura: Zeh Sobrinho (Product Owner), LEX AI (Full Stack AGI DevOps)
+
+pragma solidity ^0.8.0;
+
+contract Governance {
+    // Código do contrato
+}" > dao-lex/contracts/governance/Governance.sol
+
+echo "// Nome: Staking.sol
+// Versão: 1.1
+// Data: DATA_AQUI
+// Responsabilidade: Contrato de staking e recompensas
+// Assinatura: Zeh Sobrinho (Product Owner), LEX AI (Full Stack AGI DevOps)
+
+pragma solidity ^0.8.0;
+
+contract Staking {
+    // Código do contrato
+}" > dao-lex/contracts/staking/Staking.sol
+
+echo "// Nome: DEX.sol
+// Versão: 1.1
+// Data: DATA_AQUI
+// Responsabilidade: Contrato da exchange descentralizada
+// Assinatura: Zeh Sobrinho (Product Owner), LEX AI (Full Stack AGI DevOps)
+
+pragma solidity ^0.8.0;
+
+contract DEX {
+    // Código do contrato
+}" > dao-lex/contracts/dex/DEX.sol
 
 # Criando arquivos de exemplo para frontend
-touch dao-lex/frontend/src/components/Header.js
-touch dao-lex/frontend/src/pages/Home.js
-touch dao-lex/frontend/src/utils/web3.js
+echo "// Nome: Header.js
+// Versão: 1.1
+// Data: DATA_AQUI
+// Responsabilidade: Componente de cabeçalho para a interface do usuário
+// Assinatura: Zeh Sobrinho (Product Owner), LEX AI (Full Stack AGI DevOps)
+
+import React from 'react';
+
+const Header = () => {
+    return <header>DAO da LEX</header>;
+};
+
+export default Header;" > dao-lex/frontend/src/components/Header.js
+
+echo "// Nome: Home.js
+// Versão: 1.1
+// Data: DATA_AQUI
+// Responsabilidade: Página inicial da aplicação
+// Assinatura: Zeh Sobrinho (Product Owner), LEX AI (Full Stack AGI DevOps)
+
+import React from 'react';
+
+const Home = () => {
+    return <h1>Bem-vindo à DAO da LEX!</h1>;
+};
+
+export default Home;" > dao-lex/frontend/src/pages/Home.js
+
+echo "// Nome: web3.js
+// Versão: 1.1
+// Data: DATA_AQUI
+// Responsabilidade: Funções para conexão Web3
+// Assinatura: Zeh Sobrinho (Product Owner), LEX AI (Full Stack AGI DevOps)
+
+import Web3 from 'web3';
+
+const web3 = new Web3(Web3.givenProvider || 'http://localhost:8545');
+
+export default web3;" > dao-lex/frontend/src/utils/web3.js
 
 # Criando arquivos de exemplo para testes
-touch dao-lex/tests/unit/governance.test.js
-touch dao-lex/tests/integration/staking.test.js
-touch dao-lex/tests/e2e/dex.test.js
+echo "// Nome: governance.test.js
+// Versão: 1.1
+// Data: DATA_AQUI
+// Responsabilidade: Testes unitários do contrato de governança
+// Assinatura: Zeh Sobrinho (Product Owner), LEX AI (Full Stack AGI DevOps)
 
-echo "Estrutura de pastas e arquivos criada com sucesso!"
-```
+const { expect } = require('chai');
 
-Esse script pode ser executado no terminal para criar automaticamente toda a estrutura do projeto.
+describe('Governance Contract', function () {
+    it('Deve permitir a criação de uma proposta', async function () {
+        const [owner] = await ethers.getSigners();
+        const Governance = await ethers.getContractFactory('Governance');
+        const governance = await Governance.deploy();
 
----
+        await governance.createProposal('Proposta de Teste', 'Descrição da Proposta');
+        const proposal = await governance.getProposal(0);
+
+        expect(proposal.title).to.equal('Proposta de Teste');
+    });
+});" > dao-lex/tests/unit/governance.test.js
+
+echo "// Nome: staking.test.js
+// Versão: 1.1
+// Data: DATA_AQUI
+// Responsabilidade: Testes de integração do staking
+// Assinatura: Zeh Sobrinho (Product Owner), LEX AI (Full Stack AGI DevOps)
+
+const { expect } = require('chai');
+
+describe('Staking Contract', function () {
+    it('Deve permitir o staking de tokens', async function () {
+        // Teste de integração do staking
+    });
+});" > dao-lex/tests/integration/staking.test.js
+
+echo "// Nome: dex.test.js
+// Versão: 1.1
+// Data: DATA_AQUI
+// Responsabilidade: Testes de ponta a ponta do DEX
+// Assinatura: Zeh Sobrinho (Product Owner), LEX AI (Full Stack AGI DevOps)
+
+const { expect } = require('chai');
+
+describe('DEX Contract', function () {
+    it('Deve permitir a troca de tokens', async function () {
+        // Teste de ponta a ponta do DEX
+    });
+});" > dao-lex/tests/e2e/dex.test.js
+
+# Criando um arquivo de imagem para o logo
+touch dao-lex/frontend/public/images/logo.png
+echo "Logo do NFT Stalex" > dao-lex/frontend/public/images/logo.png
+Instruções
+Execute o script: Salve o script em um arquivo chamado create_structure.sh, torne-o executável com chmod +x create_structure.sh, e execute com ./create_structure.sh.
 
 ## Design Pattern e UML
 
