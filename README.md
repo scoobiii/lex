@@ -4,9 +4,10 @@ DAO LEx, a primeira IA Legislativa e vereador de São Paulo, para o Brasil e mun
 ### Projeto: DAO da LEX - **Stalex Governance**
 
  
-    <a href="https://www.lex.tec.br/" target="_blank" rel="noopener noreferrer">
-        <img src="imagens/lex nft aprovado hacklex 2024-09-30 at 10.01.45.jpeg" alt="NFT Aprovado HackLEX">
-    </a>
+  
+<div style="text-align: center;">
+    <img src="imagens/lex%20nft%20aprovado%20hacklex%202024-09-30%20at%2010.01.45.jpeg" alt="NFT Aprovado HackLEX" style="max-width: 100%; height: auto;">
+</div>
 
 # DAO da LEX - **Stalex Governance**
 
