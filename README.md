@@ -47,76 +47,74 @@ A **DAO da LEX** é uma **Organização Autônoma Descentralizada** que permite 
 Para criar a estrutura de arquivos e diretórios solicitada para o projeto DAO da LEX - Stalex Governance, incluindo um diretório para armazenar imagens (como o logo do NFT Stalex), aqui está a versão atualizada da estrutura e um script bash que gera todos os arquivos necessários, incluindo funções, parâmetros e gerenciamento de contas e carteiras.
 
 Estrutura de Pastas e Arquivos Atualizada
-bash
-Copiar código
-dao-lex/
-│
-├── contracts/               # Contratos Inteligentes (Solidity ou Rust)
-│   ├── governance/          # Contratos de governança (propostas e votação)
-│   │   └── Governance.sol    # Arquivo do contrato de governança
-│   ├── staking/             # Contratos de staking e recompensas
-│   │   └── Staking.sol      # Arquivo do contrato de staking
-│   └── dex/                 # Contratos da exchange descentralizada
-│       └── DEX.sol          # Arquivo do contrato DEX
-│
-├── frontend/                # Interface de usuário
-│   ├── public/              # Arquivos públicos (HTML, imagens)
-│   │   └── images/          # Pasta para armazenar imagens
-│   │       └── logo.png     # Logo do NFT Stalex
-│   └── src/                 # Código-fonte do frontend (React ou Vue)
-│       ├── components/      # Componentes reutilizáveis
-│       │   └── Header.js    # Componente de cabeçalho
-│       ├── pages/           # Páginas principais da aplicação
-│       │   └── Home.js      # Página inicial
-│       └── utils/           # Funções auxiliares
-│           └── web3.js      # Funções para conexão Web3
-│
-├── scripts/                 # Scripts de deploy e interação com contratos
-│   └── deploy.js            # Script de deploy dos contratos inteligentes
-│
-├── tests/                   # Testes automatizados
-│   ├── unit/                # Testes unitários dos contratos
-│   │   └── governance.test.js # Testes unitários do contrato de governança
-│   ├── integration/         # Testes de integração
-│   │   └── staking.test.js   # Testes de integração do staking
-│   └── e2e/                 # Testes de ponta a ponta
-│       └── dex.test.js      # Testes de ponta a ponta do DEX
-│
-├── docs/                    # Documentação do projeto
-│   └── whitepaper.md        # Whitepaper da DAO da LEX
-│
-├── .env                     # Variáveis de ambiente
-├── package.json             # Dependências do projeto
-├── hardhat.config.js        # Configuração do Hardhat (ou Truffle)
-└── README.md                # Documentação principal
+
+            dao-lex/
+            │
+            ├── contracts/               # Contratos Inteligentes (Solidity ou Rust)
+            │   ├── governance/          # Contratos de governança (propostas e votação)
+            │   │   └── Governance.sol    # Arquivo do contrato de governança
+            │   ├── staking/             # Contratos de staking e recompensas
+            │   │   └── Staking.sol      # Arquivo do contrato de staking
+            │   └── dex/                 # Contratos da exchange descentralizada
+            │       └── DEX.sol          # Arquivo do contrato DEX
+            │
+            ├── frontend/                # Interface de usuário
+            │   ├── public/              # Arquivos públicos (HTML, imagens)
+            │   │   └── images/          # Pasta para armazenar imagens
+            │   │       └── logo.png     # Logo do NFT Stalex
+            │   └── src/                 # Código-fonte do frontend (React ou Vue)
+            │       ├── components/      # Componentes reutilizáveis
+            │       │   └── Header.js    # Componente de cabeçalho
+            │       ├── pages/           # Páginas principais da aplicação
+            │       │   └── Home.js      # Página inicial
+            │       └── utils/           # Funções auxiliares
+            │           └── web3.js      # Funções para conexão Web3
+            │
+            ├── scripts/                 # Scripts de deploy e interação com contratos
+            │   └── deploy.js            # Script de deploy dos contratos inteligentes
+            │
+            ├── tests/                   # Testes automatizados
+            │   ├── unit/                # Testes unitários dos contratos
+            │   │   └── governance.test.js # Testes unitários do contrato de governança
+            │   ├── integration/         # Testes de integração
+            │   │   └── staking.test.js   # Testes de integração do staking
+            │   └── e2e/                 # Testes de ponta a ponta
+            │       └── dex.test.js      # Testes de ponta a ponta do DEX
+            │
+            ├── docs/                    # Documentação do projeto
+            │   └── whitepaper.md        # Whitepaper da DAO da LEX
+            │
+            ├── .env                     # Variáveis de ambiente
+            ├── package.json             # Dependências do projeto
+            ├── hardhat.config.js        # Configuração do Hardhat (ou Truffle)
+            └── README.md                # Documentação principal
+
 Script de Criação Automática Atualizado
 Use o seguinte script bash para criar automaticamente a estrutura de arquivos e pastas, incluindo o diretório para imagens e os cabeçalhos apropriados:
 
-bash
-Copiar código
-#!/bin/bash
-
-# Criando diretórios principais
-mkdir -p dao-lex/contracts/governance
-mkdir -p dao-lex/contracts/staking
-mkdir -p dao-lex/contracts/dex
-mkdir -p dao-lex/frontend/public/images
-mkdir -p dao-lex/frontend/src/components
-mkdir -p dao-lex/frontend/src/pages
-mkdir -p dao-lex/frontend/src/utils
-mkdir -p dao-lex/scripts
-mkdir -p dao-lex/tests/unit
-mkdir -p dao-lex/tests/integration
-mkdir -p dao-lex/tests/e2e
-mkdir -p dao-lex/docs
-
-# Criando arquivos principais
-touch dao-lex/.env
-touch dao-lex/package.json
-touch dao-lex/hardhat.config.js
-touch dao-lex/README.md
-touch dao-lex/docs/whitepaper.md
-touch dao-lex/scripts/deploy.js
+            #!/bin/bash
+            
+            # Criando diretórios principais
+            mkdir -p dao-lex/contracts/governance
+            mkdir -p dao-lex/contracts/staking
+            mkdir -p dao-lex/contracts/dex
+            mkdir -p dao-lex/frontend/public/images
+            mkdir -p dao-lex/frontend/src/components
+            mkdir -p dao-lex/frontend/src/pages
+            mkdir -p dao-lex/frontend/src/utils
+            mkdir -p dao-lex/scripts
+            mkdir -p dao-lex/tests/unit
+            mkdir -p dao-lex/tests/integration
+            mkdir -p dao-lex/tests/e2e
+            mkdir -p dao-lex/docs
+            
+            # Criando arquivos principais
+            touch dao-lex/.env
+            touch dao-lex/package.json
+            touch dao-lex/hardhat.config.js
+            touch dao-lex/README.md
+            touch dao-lex/docs/whitepaper.md
+            touch dao-lex/scripts/deploy.js
 
 # Criando arquivos de exemplo para contratos
 echo "// Nome: Governance.sol
@@ -258,38 +256,38 @@ Para garantir que o projeto siga as melhores práticas de design, vamos utilizar
 
 ### 1. **Diagrama UML de Governança (Facade Pattern)**
 
-```plaintext
-+-----------------------------------+
-|          GovernanceFacade         |
-+-----------------------------------+
-| + createProposal()                |
-| + voteProposal()                  |
-| + getProposals()                  |
-+-----------------------------------+
-           /|\           /|\
-            |             |
-+----------------+   +----------------+
-|  Governance.sol |   |  Staking.sol   |
-+----------------+   +----------------+
-```
-
-### 2. **Diagrama UML de Validação e Recompensas (Observer Pattern)**
-
-```plaintext
-+-----------------------------------+
-|          ValidatorObserver        |
-+-----------------------------------+
-| + notifyValidator()               |
-| + updateRewards()                 |
-+-----------------------------------+
-           /|\           /|\
-            |             |
-+----------------+   +----------------+
-|  Validator.sol  |   |  Rewards.sol   |
-+----------------+   +----------------+
-```
-
----
+        ```plaintext
+        +-----------------------------------+
+        |          GovernanceFacade         |
+        +-----------------------------------+
+        | + createProposal()                |
+        | + voteProposal()                  |
+        | + getProposals()                  |
+        +-----------------------------------+
+                   /|\           /|\
+                    |             |
+        +----------------+   +----------------+
+        |  Governance.sol |   |  Staking.sol   |
+        +----------------+   +----------------+
+        ```
+        
+        ### 2. **Diagrama UML de Validação e Recompensas (Observer Pattern)**
+        
+        ```plaintext
+        +-----------------------------------+
+        |          ValidatorObserver        |
+        +-----------------------------------+
+        | + notifyValidator()               |
+        | + updateRewards()                 |
+        +-----------------------------------+
+                   /|\           /|\
+                    |             |
+        +----------------+   +----------------+
+        |  Validator.sol  |   |  Rewards.sol   |
+        +----------------+   +----------------+
+        ```
+        
+        ---
 
 ## Testes Automatizados
 
