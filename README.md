@@ -1,4 +1,3 @@
-
 ---
 
 # DAO LEX - **Stalex Governance**
@@ -15,7 +14,7 @@ A DAO da LEX é como um super time que ajuda a cuidar da cidade, utilizando a te
 
 Nosso objetivo é criar uma cidade mais sustentável e inclusiva, e temos várias metas importantes:
 
-- **100% Solar**: Aumentar o uso de energia solar em toda a cidade.
+- **100% Solar**: Aumentar o uso de energia solar em toda a cidade. Clientes negociam excedente na CCEE
 - **100% Economia Circular**: Promover a reutilização e reciclagem de materiais.
 - **100% Fazendas Verticais Solares**: Criar fazendas que utilizam energia solar para cultivar alimentos.
 - **100% DAO**: Garantir que todos possam participar da governança.
@@ -33,17 +32,19 @@ Nosso objetivo é criar uma cidade mais sustentável e inclusiva, e temos vária
 A **DAO da LEX** é uma **Organização Autônoma Descentralizada** que permite a participação democrática em decisões estratégicas e legislativas, utilizando a criptomoeda **Stalex** como meio de governança e financiamento de projetos. Os membros da DAO podem:
 
 1. **Propor e votar em iniciativas legislativas e de financiamento**.
-2. **Contribuir como validadores** para a manutenção da rede.
-3. **Receber recompensas** em tokens Stalex e NFTs por sua participação.
+2. **Contribuir como validadores** para a geração de criptomoedas e NFTs, recebendo recompensas em Stalex por suas contribuições.
+3. **Vender o excedente de energia solar** através da **CCEE** (Câmara de Comercialização de Energia Elétrica), promovendo a troca de energia no mercado livre.
+4. **Receber recompensas** em tokens Stalex e NFTs por sua participação.
 
 ---
 
 ## Funcionalidades Principais 🛠️
 
 1. **Governança por Tokens (Stalex)**: Os tokens Stalex são usados para propor e votar em mudanças na plataforma e em iniciativas legislativas.
-2. **Plataforma de Validação**: Membros podem atuar como validadores da rede, garantindo a segurança e a descentralização.
-3. **Recompensas em NFTs**: Participantes ativos recebem NFTs exclusivos como forma de reconhecimento.
-4. **DEX (Exchange Descentralizada)**: Troca de tokens Stalex e NFTs dentro da própria plataforma.
+2. **Validação da Rede**: Os apoiadores da LEX atuarão como validadores, garantindo a segurança da geração de criptomoedas e NFTs, recebendo recompensas em Stalex.
+3. **Compensação de Energia Solar**: Através da **CCEE**, os clientes podem vender o excedente de energia solar no mercado livre, gerando receita adicional.
+4. **Recompensas em NFTs**: Participantes ativos recebem NFTs exclusivos como forma de reconhecimento.
+5. **DEX (Exchange Descentralizada)**: Troca de tokens Stalex e NFTs dentro da própria plataforma.
 
 ---
 
@@ -70,7 +71,8 @@ Abaixo está a estrutura dos arquivos do projeto, organizada em pastas para faci
 │   ├── /staking           # Como guardar seus tokens
 │   ├── /dex               # Mercado para trocar tokens
 │   ├── /nft               # Criando e gerenciando NFTs
-│   └── /mining            # Como ganhar tokens ajudando
+│   ├── /mining            # Como ganhar tokens ajudando
+│   └── /ccee              # Integração com a Câmara de Comercialização de Energia Elétrica
 │
 ├── /src                   # Código fonte do projeto
 │   ├── main.py            # Ponto de entrada do projeto
@@ -79,7 +81,8 @@ Abaixo está a estrutura dos arquivos do projeto, organizada em pastas para faci
 ├── /tests                 # Testes para garantir que tudo funciona
 │   ├── test_governance.py # Testes para as regras de governança
 │   ├── test_staking.py    # Testes para o sistema de staking
-│   └── test_nft.py        # Testes para a criação de NFTs
+│   ├── test_nft.py        # Testes para a criação de NFTs
+│   └── test_ccee.py       # Testes para integração com a CCEE
 │
 ├── /frontend              # Código fonte do frontend
 │   ├── /components        # Componentes React/Vue
@@ -138,6 +141,15 @@ Abaixo está a estrutura dos arquivos do projeto, organizada em pastas para faci
 | + validarTransacao()    |
 | + reivindicarRecompensas() |
 +-------------------------+
+
++-------------------------+
+|         CCEE            |
++-------------------------+
+| - clientes: mapeamento   |
++-------------------------+
+| + venderExcedente(clienteId, quantidade) |
+| + consultarPrecoEnergia() |
++-------------------------+
 ```
 
 ---
@@ -162,6 +174,7 @@ Abaixo está a estrutura dos arquivos do projeto, organizada em pastas para faci
 | DEX                |
 | NFT                |
 | Mineração          |
+| CCEE               |
 +--------------------+
 ```
 
