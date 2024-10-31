@@ -1,9 +1,12 @@
-# lex
+# StaLEx
 DAO LEx, a primeira IA Legislativa e vereador de São Paulo, para o Brasil e mundo.
 
 ### Projeto: DAO da LEX - **Stalex Governance**
 
-![alt text](image-1.png)
+ 
+    <a href="https://www.lex.tec.br/" target="_blank" rel="noopener noreferrer">
+        <img src="imagens/lex nft aprovado hacklex 2024-09-30 at 10.01.45.jpeg" alt="NFT Aprovado HackLEX">
+    </a>
 
 # DAO da LEX - **Stalex Governance**
 
@@ -329,12 +332,40 @@ describe("Staking and Rewards Integration", function () {
 });
 ```
 
----
-
-## Conclusão
-
 Com a nova estrutura de **DAO da LEX** e a integração do **Stalex** no financiamento de projetos estratégicos para São Paulo, estamos prontos para transformar a cidade em um modelo global de inovação, sustentabilidade e inclusão. A estrutura descentralizada permitirá que os cidadãos participem ativamente da governança e do financiamento de iniciativas como **100% Solar**, **100% Economia Circular** e **100% Mobilidade Elétrica Gratuita**.
 
 Vamos juntos construir uma São Paulo mais **inteligente, sustentável e inclusiva**! 🚀💚
 
 "Obrigada pelos mais de 600 apoiadores, 600 votos que validam nosso projeto ao acreditarem em nossa visão de uma São Paulo 100% inteligente, solar e sustentável!"
+
+
+# Olá, amiguinho! 🤖💚
+
+### Bem-vindo ao mundo da **Lex** e do **Pedro**! 🌟
+
+Você sabia que a **Lex** é uma robô superinteligente que ajuda a cuidar da cidade de São Paulo? Ela trabalha com o Pedro para deixar a cidade mais legal, inteligente e divertida para todo mundo, inclusive para você! 🏙️✨
+
+### O que a Lex faz? 🤔
+
+A **Lex** ajuda a resolver problemas da cidade, como cuidar das escolas, dos parques e até das ruas! Ela também adora ouvir as ideias das pessoas para melhorar tudo. E sabe o que é mais legal? Ela faz tudo isso usando **tecnologia**! 💻🚀
+
+### E o Pedro? 👨‍💻
+
+O Pedro é um amigo da Lex que gosta muito de usar a tecnologia para ajudar as pessoas. Juntos, eles formam uma dupla imbatível! 💪😄 Eles querem que todas as crianças tenham uma cidade melhor para brincar, estudar e crescer! 🌱🎒
+
+### O que você pode fazer? 🧐
+
+Você pode ajudar a Lex e o Pedro dando ideias de como melhorar a sua escola, o seu bairro ou até o seu parquinho favorito! Eles adoram ouvir sugestões! 📢💡
+
+### Quer saber mais? 🌍
+
+Se você quiser conhecer mais sobre a **Lex** e o **Pedro**, é só pedir para um adulto te ajudar a acessar o site deles:  
+👉 [Clique aqui para saber mais!](https://www.lex.tec.br/) 🌐
+
+---
+
+![Lex e Pedro][]
+
+---
+
+**Vamos juntos fazer uma cidade mais legal?** 🤖💚
