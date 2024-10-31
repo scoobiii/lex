@@ -1,4 +1,3 @@
-Vamos melhorar o projeto **DAO da LEX** com as metas e informações adicionais. O README será reformulado para refletir as novas funcionalidades, objetivos e tecnologias. Vou garantir que tudo seja claro e acessível, mantendo o tom infantil e também a profundidade técnica necessária para desenvolvedores.
 
 ---
 
@@ -168,4 +167,11 @@ Com a **DAO da LEX** e a ajuda do **Stalex**, estamos prontos para construir um 
 
 ---
 
-Este formato apresenta a informação de maneira clara e acessível, tanto para crianças quanto para desenvolvedores. As novas metas destacam o compromisso com a sustentabilidade e a inclusão, enquanto as melhorias na estrutura do projeto e os diagramas UML ajudam a entender como tudo se conecta.
+            "Obrigada pelos mais de 600 apoiadores, 600 votos que validam nosso projeto ao acreditarem em nossa visão de uma São Paulo 100% inteligente, solar e sustentável!"
+
+
+            Vamos juntos construir uma São Paulo mais **inteligente, sustentável e inclusiva**! 🚀💚
+
+           
+👉 [Clique aqui para saber mais!](https://www.lex.tec.br/) 🌐
+
